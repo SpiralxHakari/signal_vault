@@ -85,6 +85,19 @@
       margin: 0 1rem;
     }
   </style>
+<script>
+  function toggleCollection(button) {
+    if (button.dataset.state === "added") {
+      button.textContent = "[+] Add to Collection";
+      button.dataset.state = "not-added";
+      button.style.color = "#9f7dff";
+    } else {
+      button.textContent = "[-] Remove from Collection";
+      button.dataset.state = "added";
+      button.style.color = "#00f9ff";
+    }
+  }
+</script>
 </head>
 <body>
   <div class="top-bar">
@@ -100,24 +113,25 @@
     </header>
 
     <details>
-      <summary>
-        <button class="add-button">[+] Add to Collection</button>
-        Static Halo
-      </summary>
-      <div class="album-content">
-        <p><em>Released in Cycle 201—defined a generation of digital requiems.</em></p>
-        <ul>
-          <li>Glimmer Doctrine</li>
-          <li>Cicada Prayer</li>
-          <li>Bloodline Recall</li>
-        </ul>
-        <p><a href="static-halo.html">→ View full album page</a></p>
-      </div>
-    </details>
+  <summary>
+    <button class="add-button" data-state="not-added" onclick="toggleCollection(this)">[+] Add to Collection</button>
+    Static Halo
+  </summary>
+  <div class="album-content">
+    <img src="images/static_halo_cover.png" alt="Static Halo Cover" style="width: 180px; margin-bottom: 1rem; border: 1px solid #333;" />
+    <p><em>Released in Cycle 201—defined a generation of digital requiems.</em></p>
+    <ul>
+      <li>Glimmer Doctrine</li>
+      <li>Cicada Prayer</li>
+      <li>Bloodline Recall</li>
+    </ul>
+    <p><a href="static-halo.html">→ View full album page</a></p>
+  </div>
+</details>
 
     <details>
       <summary>
-        <button class="add-button">[+] Add to Collection</button>
+        <button class="add-button" data-state="not-added" onclick="toggleCollection(this)">[+] Add to Collection</button>
         Frequency//Fade
       </summary>
       <div class="album-content">
@@ -133,7 +147,7 @@
 
     <details>
       <summary>
-        <button class="add-button">[+] Add to Collection</button>
+        <button class="add-button" data-state="not-added" onclick="toggleCollection(this)">[+] Add to Collection</button>
         Songs for the Stars That Forget Us
       </summary>
       <div class="album-content">
