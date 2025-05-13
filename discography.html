@@ -113,21 +113,28 @@
 		</header>
 
 		<details>
-			<summary>
-				<button class="add-button" data-state="not-added" onclick="toggleCollection(this)">[+] Add to Collection</button>
-				Static Halo
-			</summary>
-			<div class="album-content">
-				<img src="images/static_halo_cover.png" alt="Static Halo Cover" style="width: 180px; margin-bottom: 1rem; border: 1px solid #333;" />
-				<p><em>Released in Cycle 201—defined a generation of digital requiems.</em></p>
-				<ul>
-					<li>Glimmer Doctrine</li>
-					<li>Cicada Prayer</li>
-					<li>Bloodline Recall</li>
-				</ul>
-				<p><a href="static-halo.html">→ View full album page</a></p>
-			</div
-				</details>
+  			<summary>
+    				<button class="add-button" data-state="not-added" onclick="toggleCollection(this)">[+] Add to Collection</button>
+    				Static Halo
+  			</summary>
+  			<div class="album-content" style="display: flex; justify-content: space-between; gap: 2rem; flex-wrap: wrap;">
+    			<!-- Left column: tracklist and description -->
+    				<div style="flex: 1; min-width: 200px;">
+      				<p><em>Released in Cycle 201—defined a generation of digital requiems.</em></p>
+      				<ul>
+        				<li>Glimmer Doctrine</li>
+        				<li>Cicada Prayer</li>
+        				<li>Bloodline Recall</li>
+      				</ul>
+      				<p><a href="static-halo.html">→ View full album page</a></p>
+    				</div>
+
+    			<!-- Right column: album art -->
+    				<div style="flex-shrink: 0;">
+      					<img src="images/static-halo.jpg" alt="Static Halo Cover" style="width: 180px; border: 1px solid #333;" />
+    				</div>
+  			</div>
+		</details>
 
 		<details>
 			<summary>
