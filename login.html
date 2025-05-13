@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signal Vault – Secure Access</title>
+
+	<style>
+    body {
+      background-color: #0d0d0f;
+      color: #d9faff;
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      color: #00f9ff;
+      font-size: 2.5rem;
+    }
+    .subtitle {
+      color: #ff7de8;
+      font-style: italic;
+    }
+    .login-form {
+      background-color: #1b1b1e;
+      padding: 2rem;
+      border: 1px solid #333;
+      text-align: center;
+    }
+    .login-form input {
+      width: 100%;
+      padding: 0.6rem;
+      margin-bottom: 1rem;
+      background-color: #1b1b1e;
+      color: #d9faff;
+      border: none;
+      font-style: italic;
+    }
+    .login-form button {
+      background-color: #00f9ff;
+      color: #0d0d0f;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .login-form button:hover {
+      background-color: #00cacc;
+    }
+    .loading-message {
+      display: none;
+      color: #9f7dff;
+      font-style: italic;
+      margin-top: 1rem;
+    }
+	</style>
+
+	<script>
+    function simulateLogin(event) {
+      event.preventDefault();
+      const input = document.getElementById('passcode').value.trim();
+      const loadingMsg = document.getElementById('loading');
+
+      if (input === "") {
+        alert("Signal phrase required to access secured node.");
+        return;
+      }
+
+      document.getElementById('login-btn').style.display = 'none';
+      loadingMsg.style.display = 'block';
+      loadingMsg.textContent = "Verifying neural sync...";
+
+      setTimeout(() => {
+        loadingMsg.textContent = "Signal aligned. Relay link established...";
+        setTimeout(() => {
+          window.location.href = 'dashboard.html';
+        }, 1500);
+      }, 2000);
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Signal Vault Access</h1>
+      <p class="subtitle">“Only those in resonance may proceed.”</p>
+    </header>
+
+    <form class="login-form" onsubmit="simulateLogin(event)">
+      <input type="password" id="passcode" placeholder="Enter Signal Phrase" required />
+      <button id="login-btn" type="submit">Initiate Sync</button>
+      <p class="loading-message" id="loading"></p>
+    </form>
+  </div>
+</body>
+</html>
