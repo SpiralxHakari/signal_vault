@@ -95,6 +95,7 @@
     }
   </script>
 </head>
+	
 <body>
   <div class="top-bar">
     <span>Logged in as: CLR-3NCE.7</span>
@@ -106,31 +107,38 @@
       <h1>Discography</h1>
       <p class="subtitle">“She sang to stars that learned to forget us.”</p>
     </header>
+	  
     <details>
-      <summary>
-        <button class="add-button" data-state="not-added" onclick="toggleCollection(this)">[+] Add to Collection</button>
-        Static Halo
-      </summary>
-      <div class="album-content">
-        <div style="flex: 1; min-width: 200px;">
-          <p><em>Released in Cycle 201—defined a generation of digital requiems.</em></p>
-          <ul>
-            <li>Glimmer Doctrine</li>
-            <li>Cicada Prayer</li>
-            <li>Bloodline Recall</li>
-          </ul>
-          <p><a href="static-halo.html">→ View full album page</a></p>
-        </div>
-        <div style="flex-shrink: 0;">
-          <img src="images/static_halo_cover.png" alt="Static Halo Cover" />
-        </div>
-      </div>
-    </details>
+  	<summary>
+    		<button class="add-button" data-state="not-added" onclick="toggleCollection(this)">[+] Add to Collection</button>
+    		Static Halo
+  	</summary>
+	    
+  	<div class="album-content" style="display: flex; justify-content: space-between; gap: 2rem; flex-wrap: wrap;">
+   	<!-- Left column: tracklist and description -->
+    		<div style="flex: 1; min-width: 200px;">
+      			<p><em>Released in Cycle 201—defined a generation of digital requiems.</em></p>
+      			<ul>
+        			<li>Glimmer Doctrine</li>
+        			<li>Cicada Prayer</li>
+        			<li>Bloodline Recall</li>
+      			</ul>
+      			<p><a href="static-halo.html">→ View full album page</a></p>
+    		</div>
+
+    	<!-- Right column: album art -->
+    	<div style="flex-shrink: 0;">
+      		<img src="images/static-halo.jpg" alt="Static Halo Cover" style="width: 180px; border: 1px solid #333;" />
+    	</div>
+  	</div>
+</details>
+	  
     <details>
       <summary>
         <button class="add-button" data-state="not-added" onclick="toggleCollection(this)">[+] Add to Collection</button>
         Frequency//Fade
       </summary>
+	    
       <div class="album-content">
         <div style="flex: 1; min-width: 200px;">
           <p><em>An experimental descent into corrupted memory and rhythm.</em></p>
@@ -141,16 +149,20 @@
           </ul>
           <p><a href="frequency-fade.html">→ View full album page</a></p>
         </div>
+	      
         <div style="flex-shrink: 0;">
           <img src="images/frequency_fade_cover.png" alt="Frequency//Fade Cover" />
         </div>
+	      
       </div>
     </details>
+	  
     <details>
       <summary>
         <button class="add-button" data-state="not-added" onclick="toggleCollection(this)">[+] Add to Collection</button>
         Songs for the Stars That Forget Us
       </summary>
+	    
       <div class="album-content">
         <div style="flex: 1; min-width: 200px;">
           <p><em>Posthumous vault reconstruction. Incomplete, but transcendent.</em></p>
@@ -161,11 +173,14 @@
           </ul>
           <p><a href="songs-for-stars.html">→ View full album page</a></p>
         </div>
+	      
         <div style="flex-shrink: 0;">
           <img src="images/songs_for_stars_cover.png" alt="Songs for the Stars Cover" />
         </div>
+	      
       </div>
     </details>
+	  
 	<div class="nav-links">
       		<a href="forum.html">Forum</a> |
       		<a href="discography.html">Discography</a> |
