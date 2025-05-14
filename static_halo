@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xaiya Nine – [ALBUM TITLE]</title>
+  <style>
+    body {
+      background-color: #0d0d0f;
+      color: #d9faff;
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 0;
+    }
+    .top-bar {
+      background-color: #1b1b1e;
+      padding: 0.5rem 1rem;
+      text-align: right;
+      font-size: 0.9rem;
+      border-bottom: 1px solid #333;
+    }
+    .top-bar span {
+      color: #00f9ff;
+      margin-right: 1rem;
+    }
+    .top-bar a {
+      color: #ff7de8;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    h1 {
+      color: #00f9ff;
+      font-size: 2rem;
+      margin-bottom: 0.3rem;
+    }
+    .subtitle {
+      color: #ff7de8;
+      font-style: italic;
+      margin-bottom: 2rem;
+    }
+    .album-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    .tracklist {
+      flex: 2;
+      min-width: 250px;
+    }
+    .album-meta {
+      flex: 1;
+      min-width: 200px;
+    }
+    .album-meta img {
+      width: 100%;
+      border: 1px solid #333;
+      margin-bottom: 1rem;
+    }
+    .tag {
+      display: inline-block;
+      background-color: #1b1b1e;
+      color: #9f7dff;
+      border: 1px solid #333;
+      padding: 2px 6px;
+      font-size: 0.75rem;
+      margin-right: 0.5rem;
+    }
+    .nav-links {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .nav-links a {
+      color: #00f9ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-bar">
+    <span>Logged in as: CLR-3NCE.7</span>
+    <a href="home.html">Log Out</a>
+  </div>
+
+  <div class="container">
+    <h1>Static Halo</h1>
+    <p class="subtitle">Cycle 201 · Crystalpress · Pre-Contract Era</p>
+
+    <div class="album-details">
+      <!-- LEFT: Tracklist and Lore -->
+      <div class="tracklist">
+        <h3>Tracklist</h3>
+        <ol>
+          <li>Glimmer Doctrine</li>
+          <li>Cicada Prayer</li>
+          <li>Bloodline Recall</li>
+          <li>Threshold Body</li>
+          <li>Resonant Loop: Echelon</li>
+        </ol>
+        <h3>Notes</h3>
+        <p>
+          Static Halo was the debut of Xaiya Nine, recorded in fragments over three years
+          across fractured jump sectors. It is remembered for its mix of analog pulsetronica
+          and ritual-style requiem vocals. Several tracks show structural bleed into early Martyrcore.
+        </p>
+        <p>
+          Vault curators note this is the only known edition to contain the raw field-capture
+          version of <em>Cicada Prayer</em>, prior to harmonization.
+        </p>
+      </div>
+
+      <!-- RIGHT: Album art + meta -->
+      <div class="album-meta">
+        <img src="images/static-halo.jpg" alt="Static Halo Cover" />
+        <div>
+          <strong>Label:</strong> Ghost Signal<br>
+          <strong>Runtime:</strong> 42:12<br>
+          <strong>Master ID:</strong> X9-SH-002<br><br>
+          <div class="tag">Studio</div>
+          <div class="tag">Pre-Collapse</div>
+          <div class="tag">Artifact Tier I</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-links">
+      <a href="discography.html">← Return to Discography</a>
+    </div>
+  </div>
+</body>
+</html>
